@@ -1,0 +1,20 @@
+/* Copy and paste any or all of these css entries into your custom.css file inside your
+ * css folder. The functions are annotated to make things as easy as possible for you.
+ * Use any colors you want! Go to - "http://htmlcolorcodes.com/color-picker/"
+ * Pick your color, copy and paste the HEX number. Example - #62FF00 = bright green.
+ */
+
+.MMM-Aurora .header {
+  color: white;               /* Header color. Default is white. */
+}
+
+.MMM-Aurora .photo {
+/*  display: none;              uncomment if you don't want animated image */
+  /* transform:scale(1.1,1.1); */
+  /* width: 100%;  */  
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  /* float: center; */
+}
