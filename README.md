@@ -2,6 +2,8 @@
 
 Graphic prediction for best viewing of Aurora Australis or Aurora Borealis.
 
+Image source updates about every 10 minutes.
+
 ## Examples
 
 ![](pix/1.png), ![](pix/2.png)
