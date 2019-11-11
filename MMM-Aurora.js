@@ -7,7 +7,7 @@
 Module.register("MMM-Aurora", {
     // Default module config.
     defaults: {
-        pole: "north", // north or south. Set in config.js
+        pole: "north", // north, south, solar, coronal or sunX. Set in config.js
         maxWidth: "100%", // Set in config.js. Adjusts size of image. Retains aspect ratio.
         updateInterval: 10 *60 * 1000, // set in config.js. Image source updates about every 10 minutes
         animationSpeed: 3000, // fade in/out speed. 0 = no fade in/out
@@ -38,8 +38,14 @@ Module.register("MMM-Aurora", {
 
             if (this.config.pole === "north") {
               this.url = 'https://services.swpc.noaa.gov/images/animations/ovation-north/latest.jpg';
-            } else if (this.config.pole === "south"){
+            } else if (this.config.pole === "south") {
               this.url = 'https://services.swpc.noaa.gov/images/animations/ovation-south/latest.jpg';
+            } else if (this.config.pole === "solar") {
+              this.url = 'https://services.swpc.noaa.gov/images/animations/enlil/latest.jpg';
+            } else if (this.config.pole === "coronal") {
+              this.url = 'https://services.swpc.noaa.gov/images/animations/lasco-c3/latest.jpg';
+            } else if (this.config.pole === "sunX") {
+              this.url = 'https://services.swpc.noaa.gov/images/animations/GOES-14-CS-PTHNA-0.4/latest.png';
             }
 
             image.src = this.url + "?seed=" + getTimeStamp;
